@@ -13,8 +13,8 @@ jobs:
           node -v
           npm -v
       - name: python Comman
-          run: |
+        run: |
             import platform
             print
             (platfor.processor())
-          shell: python  
+        shell: python  
