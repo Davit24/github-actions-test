@@ -1,0 +1,17 @@
+Index: .github/workflows/simple.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>name: Shell Commands\n\non: [push]\n\njobs:\n  run-shell-command:\n    runs-on: ubuntu-latest\n    steps:\n      - name: echo a string\n        run: eccho \"Hello World\"\n      - name: multiline script\n        run: |\n          node -v\n          npm -v\n      - name: python Comman\n        run: |\n            import platform\n            print\n            (platfor.processor())\n        shell: python  \n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.github/workflows/simple.yml b/.github/workflows/simple.yml
+--- a/.github/workflows/simple.yml	(revision 0f94614aebf1f839b742285f2314a078efb06ada)
++++ b/.github/workflows/simple.yml	(date 1651858093897)
+@@ -16,5 +16,5 @@
+         run: |
+             import platform
+             print
+-            (platfor.processor())
++            (platform.processor())
+         shell: python  
